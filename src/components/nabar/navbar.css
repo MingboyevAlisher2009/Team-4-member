@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin: 2em 0;
+    padding: .6em 1em;
+    background: linear-gradient(90deg, #8e8e8e, #eeeeee00, #eeeeee00, #6e6e6e);
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255);
+}
