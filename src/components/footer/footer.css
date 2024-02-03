@@ -6,8 +6,8 @@
 
 .footer {
     margin: 3em 0 0 0;
-    padding: 2em 0 8em 5em;
-    background: linear-gradient(150deg, #8e8e8e, #eeeeee28, #eeeeee10, #6e6e6e);
+    padding: 5em 0 10em 5em;
+    background: linear-gradient(150deg, #8e8e8e, #eeeeee3c, #eeeeee10, #6e6e6e4c);
     border-top: 2px solid rgba(255, 255, 255);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;

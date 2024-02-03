@@ -9,7 +9,7 @@ function Footer() {
                 <h1 className='text-white text-3xl font-bold'>TE4M</h1>
             </div>
             <div className="footer-text absolute mt-8">
-                <p className='text-white text-lg'>All rights received. <br /> Hamma huquqlar himoyalangan.</p>
+                <p className='text-white text-xl'>All rights received. <br /> Hamma huquqlar himoyalangan.</p>
             </div>
             <div className="footer-links inline-block absolute right-20">
                 <div className="footer-instagram inline-block bg-gray-100 p-3 rounded-full">

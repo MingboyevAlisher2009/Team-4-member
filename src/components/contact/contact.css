@@ -14,8 +14,8 @@ main {
     height: auto;
     border: 2px solid #fff;
     border-radius: 70px;
-    background: linear-gradient(130deg, #FFFFFF -5.49%, rgba(255, 255, 255, 0) 30.94%, rgba(255, 255, 255, 0) 71.96%, rgb(255, 255, 255) 99.46%);
-    padding: 4.35em 0;
+    background: linear-gradient(130deg, #ffffffcd -5.49%, rgba(255, 255, 255, 0.105) 30.94%, rgba(255, 255, 255, 0) 71.96%, rgba(255, 255, 255, 0.224) 99.46%);
+    padding: 4.35em;
 }
 
 .contact-container {
@@ -24,7 +24,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 90%;
+    width: 100%;
     border-radius: 45px;
     height: auto;
     padding: 5em 0;
