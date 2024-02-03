@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className='footer mt-20'>
             <div className="footer-logo inline-block">
-                <h1 className='text-white text-3xl font-bold'>TE4M</h1>
+                <h1 className='text-white text-3xl font-bold'>TE5M</h1>
             </div>
             <div className="footer-text absolute mt-8">
                 <p className='text-white text-xl'>All rights received. <br /> Hamma huquqlar himoyalangan.</p>
