@@ -39,7 +39,6 @@ main {
     width: 100%;
     outline: none;
     font-size: 1.5em;
-    font-family: cursive;
 }
 
 
@@ -71,6 +70,7 @@ main {
     .or {
         display: none;
     }
+
     .contact-info {
         display: none;
     }

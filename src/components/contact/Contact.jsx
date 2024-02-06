@@ -43,8 +43,8 @@ function Contact() {
                         <label className='inline-block text-2xl '>Email</label>
                         <input className='contact-input block' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
-                        <label htmlFor='massege' className='inline-block text-2xl mt-10'>Massage</label>
-                        <input id='massege' className='contact-input block' type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
+                        <label htmlFor='messege' className='inline-block text-2xl mt-10'>Message</label>
+                        <input id='messege' className='contact-input block' type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
 
                         <button onClick={(e) => handleSubmit(e)} className='btn text-xl mt-14 rounded-3xl py-3 text-white'>Send</button>
                     </form>
