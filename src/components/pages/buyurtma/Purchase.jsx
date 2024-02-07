@@ -1,11 +1,17 @@
 import React from 'react'
 import './prodact.css'
+import Navbar from '../Abaut/navbar-about/Navbar'
 
 function Purchase() {
+
+  const props = 'Contact'
+
   return (
-    <div>
-        <h1>Purchase</h1>
-    </div>
+    <>
+      <header>
+        <Navbar props={props}/>
+        </header>  
+    </>
   )
 }
 
