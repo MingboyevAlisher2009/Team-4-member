@@ -16,6 +16,8 @@ main {
     border-radius: 70px;
     background: linear-gradient(130deg, #ffffffcd -5.49%, rgba(255, 255, 255, 0.105) 30.94%, rgba(255, 255, 255, 0) 71.96%, rgba(255, 255, 255, 0.224) 99.46%);
     padding: 4.35em;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
 }
 
 .contact-container {
@@ -32,6 +34,25 @@ main {
     -webkit-backdrop-filter: blur(15px);
     background: linear-gradient(117.1deg, #FFFFFF -5.49%, rgba(255, 255, 255, 0.52) 30.94%, rgba(255, 255, 255, 0.48) 71.96%, rgba(255, 255, 255, 0.74) 99.46%);
 }
+
+.contact-hover-effect {
+    position: absolute;
+    left: 2900px;
+    width: 20%;
+    height: 240%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.498);
+    z-index: 10;
+    transform: rotate(35deg);
+    transition: all .5s linear;
+
+}
+
+main:hover .contact-hover-effect {
+    left: -3000px;
+    box-shadow: 50px 0 0 rgba(255, 255, 255, 0.498);
+}
+
 
 .contact-input {
     padding: .4em .8em;

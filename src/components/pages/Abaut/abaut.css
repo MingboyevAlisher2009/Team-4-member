@@ -1,0 +1,28 @@
+.user-card {
+    display: flex;
+    background: #ffffff48;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 5em;
+    border-radius: 30px;
+}
+
+.user-programming div {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 .6em;
+    background: #fff;
+    box-shadow: 0 0 8px 12px rgba(255, 255, 255, 0.589);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-programming div:hover {
+    transform: scale(1.1);
+}
+
+.user-programming div img {
+    display: inline-block;
+    transform: translate(13%, 13%);
+}

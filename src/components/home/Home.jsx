@@ -6,17 +6,18 @@ import Footer from '../footer/Footer'
 import Home1 from '../home page/Home'
 
 function Home() {
+
     return (
         <>
             <header className='px-5'>
-                <Navbar/>
-                <Home1/>
+                <Navbar />
+                <Home1 />
             </header>
             <section>
-                <h1 className='text-3xl font-bold text-white text-center my-20'>Our Team</h1>
-                <Card/>
-                <Contact/>
-                <Footer/>
+                <h1 className='text-3xl font-bold text-white text-center mb-10 mt-0'>Our Team</h1>
+                <Card />
+                <Contact />
+                <Footer />
             </section>
         </>
     )

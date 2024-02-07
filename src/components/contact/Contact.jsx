@@ -37,6 +37,7 @@ function Contact() {
     return (
         <main>
             <div className="contact-container">
+            <div className="contact-hover-effect"></div>
                 <div className="contact-form">
                     <h1 className='text-3xl ml-24'>Contact</h1>
                     <form className='mt-20 pl-3'>
