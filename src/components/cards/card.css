@@ -17,11 +17,12 @@
     text-align: center;
     width: 280px;
     margin: 1em .5em;
-    padding: 1em 0 0 0;
+    padding: .8em 0 0 0;
+    overflow: hidden;
 }
 
 .glass {
-    background: linear-gradient(140deg, #8e8e8e, #ffffff20,#ffffff20);
+    background: linear-gradient(140deg, #8e8e8e, #ffffff20, #ffffff20);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-top-right-radius: 170px;
@@ -55,4 +56,24 @@
 
 .card .card-footer a:active {
     padding: .45em 3.8em;
+}
+
+.hover-effect {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 450px;
+    width: 20%;
+    height: 240%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.498);
+    z-index: 10;
+    transform: rotate(35deg);
+    transition: all .25s linear;
+
+}
+
+.card:hover .hover-effect {
+    left: -200px;
+    box-shadow: 50px 0 0 rgba(255, 255, 255, 0.498);
 }
