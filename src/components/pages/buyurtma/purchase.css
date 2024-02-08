@@ -1,0 +1,40 @@
+.user-select {
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-select div {
+    width: 100px;
+    height: 100px;
+    margin: 0 1em;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-select div:hover {
+    -webkit-box-shadow: 0px 0px 100px 26px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 100px 26px rgb(255, 255, 255);
+    box-shadow: 0px 0px 100px 26px rgb(255, 255, 255);
+}
+
+/* .user-select div:hover {
+    transform: scale(1.1);
+} */
+
+.user-select div img {
+    display: inline-block;
+    transform: translate(20%, 20%);
+}
+
+.btn-pur {
+    background: #ffffffba;
+    -webkit-box-shadow: 0px 0px 100px 26px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 100px 26px rgb(255, 255, 255);
+    box-shadow: 0px 0px 100px 26px rgb(255, 255, 255);
+}
+
+.btn-pur:active {
+    transform: scale(0.98);
+}

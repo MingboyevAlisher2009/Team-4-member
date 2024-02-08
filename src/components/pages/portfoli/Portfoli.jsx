@@ -1,65 +1,80 @@
-import React from 'react'
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-
-import './abaut.css';
+import "./portfoli.css";
+import React, { useEffect, useState } from "react";
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+function Portfoli({ slides }) {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-function Portfoli() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === slides.length * 2 - 1 ? 0 : prevSlide + 1
+      );
+    }, 2000); // Change slide every 5 seconds
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  const handleSlideClick = (index) => {
+    setCurrentSlide(index);
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? slides.length * 2 - 1 : prevSlide - 1
+    );
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === slides.length * 2 - 1 ? 0 : prevSlide + 1
+    );
+  };
+
   return (
-    <Swiper
-      effect={'coverflow'}
-      grabCursor={true}
-      centeredSlides={true}
-      slidesPerView={'auto'}
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 5,
-        depth: 700,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      pagination={true}
-      modules={[EffectCoverflow, Pagination]}
-      className="mySwiper"
-    >
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        <h1>helo</h1>
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-      </SwiperSlide>
-    </Swiper>
-  )
+    <div className="slider-container">
+      <div className="slides">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slide ${currentSlide === index ? "active" : ""}`}
+          >
+            <img src={slide.image} alt={`Slide ${index}`} />
+          </div>
+        ))}
+        {slides.map((slide, index) => (
+          <div
+            key={index + slides.length}
+            className={`slide ${
+              currentSlide === index + slides.length ? "active" : ""
+            }`}
+          >
+            <img src='{slide.image}' alt={`Slide ${index}`} />
+          </div>
+        ))}
+      </div>
+      <div className="cards">
+        {slides[currentSlide % slides.length].cards.map((card, index) => (
+          <div key={index} className="card">
+            {card}
+          </div>
+        ))}
+      </div>
+      <div className="buttons">
+        <button className="prev-button" onClick={handlePrevSlide}>
+          Previous
+        </button>
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            className={`button ${currentSlide === index ? "active" : ""}`}
+            onClick={() => handleSlideClick(index)}
+          />
+        ))}
+        <button className="next-button" onClick={handleNextSlide}>
+          Next
+        </button>
+      </div>
+    </div>
+  );
 }
-
-export default Portfoli
+export default Portfoli;

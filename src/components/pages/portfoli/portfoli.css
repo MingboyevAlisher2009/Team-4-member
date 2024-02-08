@@ -1,0 +1,88 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    opacity: 1;
+}
+
+.cards {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Arka fon rangi va opacitiy */
+    padding: 10px;
+}
+
+.card {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: white;
+    /* Kartochka fon rangi */
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888;
+    /* Button rangi */
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #333;
+    /* Aktiv button rangi */
+}
+
+.prev-button,
+.next-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #555;
+}
+
+.prev-button {
+    border-radius: 5px 0 0 5px;
+}
+
+.next-button {
+    border-radius: 0 5px 5px 0;
+}
