@@ -16,28 +16,25 @@
     flex-direction: column;
     text-align: center;
     width: 280px;
-    margin: 1em .5em;
-    padding: .8em 0 0 0;
-    overflow: hidden;
+    height: auto;
+    margin: 10em 0 0 0;
+    padding: 2em 0;
 }
 
 .glass {
     background: linear-gradient(140deg, #8e8e8e, #ffffff20, #ffffff20);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-top-right-radius: 170px;
-    border-top-left-radius: 170px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 40px;
     border: 3px solid rgb(255, 255, 255);
 }
 
 .card .card-img img {
     position: relative;
-    margin: 5px auto;
+    margin: -150px auto 0 auto;
     padding: 0;
-    width: 85%;
-    height: 75%;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-size: cover;
     object-fit: cover;
@@ -48,7 +45,7 @@
     height: auto;
     margin: 0 auto;
     padding: .5em 4em;
-    background: #0a8be7;
+    background: #0047FF;
     border-radius: 50px;
     cursor: pointer;
     transition: .3s;
@@ -56,24 +53,30 @@
 
 .card .card-footer a:active {
     padding: .45em 3.8em;
+    background: #535353;
 }
 
-.hover-effect {
+.code-img1 {
+    -webkit-box-shadow: 0px 0px 100px 36px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 100px 36px rgb(255, 255, 255);
+    box-shadow: 0px 0px 100px 36px rgb(255, 255, 255);
+}
+
+.hover-card {
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    transition: all 3s;
+}
+
+.arrow {
+    left: 46%;
+    transform: rotate(45deg);
+    z-index: -10;
+}
+
+.card:hover .hover-card {
+    top: -1px;
+    z-index: 1000;
     display: flex;
-    align-items: center;
-    position: absolute;
-    left: 450px;
-    width: 20%;
-    height: 240%;
-    background-color: #ffffff;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.498);
-    z-index: 10;
-    transform: rotate(35deg);
-    transition: all .25s linear;
-
-}
-
-.card:hover .hover-effect {
-    left: -200px;
-    box-shadow: 50px 0 0 rgba(255, 255, 255, 0.498);
 }

@@ -13,7 +13,7 @@ import img4 from '../../../img/photo_2024-02-03_09-50-51.jpg';
 
 
 // import required modules
-import Navbar from './navbar-about/Navbar';
+import Navbar from '../../nabar/Navbar';
 
 function Abaut() {
   const props = 'Buyurtma berish'
@@ -35,13 +35,13 @@ function Abaut() {
             </div>
           </div>
           <div className="user-programming absolute bottom-10 right-20">
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwindcss" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/redux.png" alt="redux" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/html-5--v1.png" alt="html-5--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/css3.png" alt="css3" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/javascript--v1.png" alt="javascript--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/tailwindcss.png" alt="tailwindcss" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/react-native.png" alt="react-native" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/redux.png" alt="redux" /></div>
           </div>
         </div>
         <div className="user-card mt-14">
@@ -55,11 +55,11 @@ function Abaut() {
             </div>
           </div>
           <div className="user-programming absolute bottom-10 right-20">
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/html-5--v1.png" alt="html-5--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/css3.png" alt="css3" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/javascript--v1.png" alt="javascript--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/react-native.png" alt="react-native" /></div>
           </div>
         </div>
         <div className="user-card mt-14">
@@ -73,11 +73,11 @@ function Abaut() {
             </div>
           </div>
           <div className="user-programming absolute bottom-10 right-20">
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/html-5--v1.png" alt="html-5--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/css3.png" alt="css3" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/javascript--v1.png" alt="javascript--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/react-native.png" alt="react-native" /></div>
           </div>
         </div>
         <div className="user-card mt-14">
@@ -91,11 +91,11 @@ function Abaut() {
             </div>
           </div>
           <div className="user-programming absolute bottom-10 right-20">
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/html-5--v1.png" alt="html-5--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/css3.png" alt="css3" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/javascript--v1.png" alt="javascript--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/react-native.png" alt="react-native" /></div>
           </div>
         </div>
         <div className="user-card mt-14">
@@ -109,11 +109,11 @@ function Abaut() {
             </div>
           </div>
           <div className="user-programming absolute bottom-10 right-20">
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
-            <div><img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/html-5--v1.png" alt="html-5--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/css3.png" alt="css3" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/color/40/javascript--v1.png" alt="javascript--v1" /></div>
+            <div><img width="40" height="40" src="https://img.icons8.com/ios/50/bootstrap.png" alt="bootstrap" /></div>
+            <div><img width="40" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" /></div>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import Navbar from "../Abaut/navbar-about/Navbar";
+import Navbar from "../../nabar/Navbar";
 import "./prodact.css";
 import Footer from "../../footer/Footer";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -39,7 +39,7 @@ function Prodact() {
               Telefon raqam
             </label>
             <input
-              className="block w-full h-14 text-2xl px-5 rounded-full"
+              className="block w-full h-14 text-2xl px-5 rounded-full outline-none	"
               type="number"
               id="phoneNumber"
               required
@@ -52,7 +52,7 @@ function Prodact() {
               Elektron pochta
             </label>
             <input
-              className="block w-full h-14 text-2xl px-5 rounded-full"
+              className="block w-full h-14 text-2xl px-5 rounded-full outline-none	"
               type="email"
               id="email"
               required
@@ -60,7 +60,7 @@ function Prodact() {
             />
           </form>
           {number && email ? (
-            <NavLink to="/purchase" className="w-full flex justify-end mt-12">
+            <NavLink to="/" className="w-full flex justify-end mt-12">
               <img
                 width="50"
                 height="50"

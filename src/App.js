@@ -9,31 +9,9 @@ import img1 from "./img/photo_2024-02-03_09-47-31.jpg";
 import img2 from "./img/photo_2024-02-03_09-47-31.jpg";
 import img3 from "./img/photo_2024-02-03_09-50-51.jpg";
 import img4 from "./img/photo_2024-02-03_09-50-56.jpg";
+import Slider from "./Slider";
 
 function App() {
-  const slidesData = [
-    {
-      image:
-        "https://img.freepik.com/premium-vector/instagram-popular-social-media-icon-editorial-only-kyiv-ukraine-december-3-2019_944081-64.jpg",
-      cards: ["Card 1.1", "Card 1.2", "Card 1.3"],
-    },
-    {
-      image:   "https://img.freepik.com/premium-vector/instagram-popular-social-media-icon-editorial-only-kyiv-ukraine-december-3-2019_944081-64.jpg",
-      cards: ["Card 2.1", "Card 2.2", "Card 2.3"],
-    },
-    {
-      image: "https://img.freepik.com/premium-vector/instagram-popular-social-media-icon-editorial-only-kyiv-ukraine-december-3-2019_944081-64.jpg",
-      cards: ["Card 3.1", "Card 3.2", "Card 3.3"],
-    },
-    {
-      image: "https://img.freepik.com/premium-vector/instagram-popular-social-media-icon-editorial-only-kyiv-ukraine-december-3-2019_944081-64.jpg",
-      cards: ["Card 4.1", "Card 4.2", "Card 4.3"],
-    },
-    {
-      image:   "https://img.freepik.com/premium-vector/instagram-popular-social-media-icon-editorial-only-kyiv-ukraine-december-3-2019_944081-64.jpg",
-      cards: ["Card 5.1", "Card 5.2", "Card 5.3"],
-    },
-  ];
 
   const router = createBrowserRouter([
     {
@@ -41,12 +19,12 @@ function App() {
       element: <Home />,
     },
     {
-      path: "abaut",
+      path: "about",
       element: <Abaut />,
     },
     {
       path: "portfoli",
-      element: <Portfoli slides={slidesData} />,
+      element: <Portfoli />,
     },
     {
       path: "prodact",
@@ -56,6 +34,10 @@ function App() {
       path: "purchase",
       element: <Purchase />,
     },
+    {
+      path: 'slider',
+      element: <Slider/>
+    }
   ]);
 
   return <RouterProvider router={router} />;

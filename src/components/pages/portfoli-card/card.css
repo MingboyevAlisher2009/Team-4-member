@@ -1,0 +1,56 @@
+.portfoli-card {
+    background: linear-gradient(130deg, #ffffff5f, #ffffff35, #ffffff20);
+    height: 70vh;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.portfoli-like {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #ccc;
+    border-radius: 50%;
+
+}
+
+.portfoli-like label {
+    padding: 0;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    transform: translate(20%, 25%);
+}
+
+.portfoli-like input {
+    display: none;
+}
+
+.portfoli-like input:checked+label svg {
+    fill: hsl(0deg 100% 50%);
+    stroke: hsl(0deg 100% 50%);
+    animation: heartButton 1s;
+}
+
+@keyframes heartButton {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
