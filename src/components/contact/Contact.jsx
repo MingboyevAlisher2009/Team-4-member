@@ -39,9 +39,9 @@ function Contact() {
             <div className="contact-container">
             <div className="contact-hover-effect"></div>
                 <div className="contact-form">
-                    <h1 className='text-3xl ml-24'>Contact</h1>
+                    <h1 className='text-3xl ml-24 '>Contact</h1>
                     <form className='mt-20 pl-3'>
-                        <label className='inline-block text-2xl '>Email</label>
+                        <label className='inline-block text-2xl'>Email</label>
                         <input className='contact-input block' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
                         <label htmlFor='messege' className='inline-block text-2xl mt-10'>Message</label>
@@ -51,9 +51,9 @@ function Contact() {
                     </form>
                 </div>
                 <div className="or">
-                    <span style={{ width: '.07em' }} className='or-line block h-32 ml-2 bg-black'></span>
-                    <p className='or-text my-5'>OR</p>
-                    <span style={{ width: '.07em' }} className='or-line block h-32 ml-2 bg-black'></span>
+                    <span style={{ width: '.07em' }} className='or-line block h-32 ml-3 bg-black'></span>
+                    <p className='or-text my-5 text-black'>OR</p>
+                    <span style={{ width: '.07em' }} className='or-line block h-32 ml-3 bg-black'></span>
                 </div>
                 <div className="contact-info">
                     <div style={{ background: '#D9D9D9' }} className="contact-instagram p-6 rounded-full">

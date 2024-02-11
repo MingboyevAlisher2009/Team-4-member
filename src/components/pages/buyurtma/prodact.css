@@ -1,5 +1,5 @@
 .form-prodact {
-    background: linear-gradient(140deg, #8e8e8e, #ffffff20, #ffffff20);
+    background: var(--shadow-color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 50px;

@@ -7,8 +7,8 @@ import { Parallax, Pagination, Autoplay, Navigation } from "swiper/modules";
 function Home1() {
   return (
     <div className="home-page flex items-center justify-center flex-col mb-10 rounded-3xl">
-      <h1 className="text-8xl font-bold text-white ">TE5M</h1>
-      <p className="text-white w-5/6 mt-5">
+      <h1 className="text-8xl font-bold ">TE5M</h1>
+      <p className="w-5/6 mt-5">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim,
         provident. Reprehenderit ex, accusamus alias unde corporis fugit minima
         omnis reiciendis? Delectus explicabo repellendus eaque, vitae distinctio

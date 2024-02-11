@@ -19,6 +19,7 @@ import img4 from "../../../img/photo_2024-02-03_09-50-56.jpg";
 import Navbar from "../../nabar/Navbar";
 import Footer from "../../footer/Footer";
 import Card from "../portfoli-card/Card";
+import Control from "../../../controls/Control";
 // import required modules
 function Portfoli() {
   return (
@@ -71,6 +72,7 @@ function Portfoli() {
       <div className="section">
         <Card/>
       </div>
+      <Control/>
       <Footer />
     </>
   );

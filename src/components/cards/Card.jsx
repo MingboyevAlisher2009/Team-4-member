@@ -26,7 +26,7 @@ function Card() {
             "https://img.icons8.com/material-outlined/100/535353/code.png"
           }
           imgLink2={
-            "https://img.icons8.com/material-rounded/100/535353/writer-male.png"
+            "https://img.icons8.com/fluency-systems-regular/48/designer.png"
           }
           style={
             "code-img1 inline-block inline-block bg-white rounded-full p-1"

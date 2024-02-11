@@ -1,0 +1,94 @@
+:root {
+    /* fonts */
+    --serif-display: 'DM Serif Display', 'Georgia', serif;
+    --jost-text: 'Jost', 'Arial', sans-serif;
+    /* colors */
+    --primary-color: #cda274;
+    --secondary-color: #292f36;
+    --white-color: #fff;
+    --refresh-color: #fff;
+    --black-color: #000;
+    --shadow-color: linear-gradient(150deg, #8e8e8e, #eeeeee3c, #eeeeee10, #6e6e6e4c);
+    /* background colors */
+    --white-bg-color: #fff;
+    --dark-bg-color: #ffffff;
+    --color--btn: #000;
+}
+
+body {
+
+    color: var(--secondary-color);
+    background-color: var(--white-bg-color);
+    transition: all 0.3s ease;
+}
+
+.dark-mode {
+    /* colors */
+    --secondary-color: #ffffff;
+    --shadow-color: linear-gradient(140deg, #8e8e8e, #ffffff20, #ffffff20);
+    /* background colors */
+    --white-bg-color: #222222;
+    --dark-bg-color: #ffffff;
+}
+
+.light-mode {
+    /* colors */
+    --secondary-color: #000000;
+    --white-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --white-bg-color: #ffffff;
+    --dark-bg-color: #000000;
+}
+
+.footer {
+    background: var(--shadow-color);
+}
+
+main {
+    background: var(--shadow-color);
+}
+
+.control {
+    position: fixed;
+    right: -60px;
+    bottom: 0;
+    padding: 0;
+    border-radius: 50%;
+    background: #969696;
+    border: 2px solid #fff;
+    transition: all .5s;
+}
+
+.control-box {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    background: #969696;
+    border: 2px solid #fff;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.control-menu {
+    position: fixed;
+    right: 30px;
+    bottom: 120px;
+    padding: 7px;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border-radius: 10px;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.control-menu button:active {
+    border: 2px dashed #cda274;
+}
