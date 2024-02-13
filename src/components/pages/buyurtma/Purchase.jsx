@@ -3,6 +3,7 @@ import "./purchase.css";
 import Navbar from "../../nabar/Navbar";
 import Footer from "../../footer/Footer";
 import { Link } from "react-router-dom";
+import Control from "../../../controls/Control";
 
 function Purchase() {
   const props = "Contact";
@@ -84,6 +85,7 @@ function Purchase() {
           </Link>
         </div>
       </header>
+      <Control/>
       <Footer />
     </>
   );

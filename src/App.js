@@ -10,6 +10,7 @@ import img2 from "./img/photo_2024-02-03_09-47-31.jpg";
 import img3 from "./img/photo_2024-02-03_09-50-51.jpg";
 import img4 from "./img/photo_2024-02-03_09-50-56.jpg";
 import Slider from "./Slider";
+import Contact from "./components/contact/Contact";
 
 function App() {
 

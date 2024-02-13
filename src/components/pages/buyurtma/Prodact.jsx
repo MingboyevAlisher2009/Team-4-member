@@ -3,6 +3,7 @@ import "./prodact.css";
 import Footer from "../../footer/Footer";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Control from "../../../controls/Control";
 
 function Prodact() {
   const [test, setTest] = useState("");
@@ -80,6 +81,7 @@ function Prodact() {
           )}
         </div>
       </header>
+      <Control/>
       <Footer />
     </>
   );

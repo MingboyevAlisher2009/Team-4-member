@@ -8,7 +8,7 @@ function Control() {
   const scroll = () => {
     const control = document.querySelector(".control");
     const controlMenu = document.querySelector(".control-menu");
-    if (document.documentElement.scrollTop > 300) {
+    if (document.documentElement.scrollTop > 100) {
       control.classList.add("control-box");
       controlMenu.classList.add("control-menu-active");
     } else {
@@ -26,6 +26,8 @@ function Control() {
     document.body.classList.remove("dark-mode");
     document.querySelector(".dark-btn").classList.toggle("hidden");
     document.querySelector(".light-btn").classList.toggle("hidden");
+    const controlMenu = document.querySelector(".control-setting");
+    controlMenu.classList.toggle("hidden");
   };
 
   const darkMode = () => {
@@ -33,6 +35,8 @@ function Control() {
     document.body.classList.remove("light-mode");
     document.querySelector(".dark-btn").classList.toggle("hidden");
     document.querySelector(".light-btn").classList.toggle("hidden");
+    const controlMenu = document.querySelector(".control-setting");
+    controlMenu.classList.toggle("hidden");
   };
 
   return (
